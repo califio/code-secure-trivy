@@ -32,7 +32,6 @@ func (r *ContainerCmd) Run() error {
 }
 
 var cli struct {
-	Debug      bool          `help:"Enable debug mode."`
 	Dependency DependencyCmd `cmd:"" help:"Scan dependency project"`
 	Container  ContainerCmd  `cmd:"" help:"Scan container"`
 }
