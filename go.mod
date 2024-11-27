@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/CycloneDX/cyclonedx-go v0.9.1
 	github.com/alecthomas/kong v1.4.0
-	gitlab.com/code-secure/analyzer v1.1.0
+	gitlab.com/code-secure/analyzer v1.1.3
 )
 
 require (

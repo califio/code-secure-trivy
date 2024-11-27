@@ -8,7 +8,7 @@ import (
 )
 
 type DependencyCmd struct {
-	SkipDbUpdate bool   `help:"Skip DB update" env:"SKIP_DB_UPDATE" default:"true"`
+	SkipDbUpdate bool   `help:"Skip DB update" env:"TRIVY_SKIP_DB_UPDATE" default:"false"`
 	ProjectPath  string `help:"Project path" env:"PROJECT_PATH" default:"."`
 }
 
