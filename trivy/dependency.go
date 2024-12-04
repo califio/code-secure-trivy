@@ -126,6 +126,7 @@ func (scanner *DependencyScanner) scanWithOutputFormat(format string, output str
 	args := []string{
 		"repo",
 		"--scanners", "vuln",
+		"--ignore-unfixed",
 		"--output", output,
 		"--format", format,
 	}
