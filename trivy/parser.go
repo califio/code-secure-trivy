@@ -2,7 +2,7 @@ package trivy
 
 import (
 	"github.com/CycloneDX/cyclonedx-go"
-	"gitlab.com/code-secure/analyzer"
+	"github.com/califio/code-secure-analyzer"
 	"strings"
 )
 

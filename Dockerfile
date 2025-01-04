@@ -1,5 +1,5 @@
 # When updating version make sure to check on semgrepignore file as well
-FROM golang:1.22-alpine AS build
+FROM golang:1.23-alpine AS build
 ENV CGO_ENABLED=0 GOOS=linux
 WORKDIR /go/src/buildapp
 COPY . .

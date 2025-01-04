@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/CycloneDX/cyclonedx-go"
-	"gitlab.com/code-secure/analyzer"
-	"gitlab.com/code-secure/analyzer/logger"
+	"github.com/califio/code-secure-analyzer"
+	"github.com/califio/code-secure-analyzer/logger"
 	"os"
 	"testing"
 	"trivy/trivy"
@@ -28,7 +28,7 @@ func initEnv() {
 	os.Setenv("CODE_SECURE_URL", "http://localhost:5272")
 }
 func TestSBOMParser(t *testing.T) {
-	reader, err := os.Open("testdata/sbom.json")
+	reader, err := os.Open("testdata/sbom_maven.json")
 	if err != nil {
 		logger.Fatal(err.Error())
 	}
